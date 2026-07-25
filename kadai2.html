@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>はじめてのCSS</title>
+  <style>
+
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: #f0f0f0;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      gap: 10px;                     
+    }
+
+    /* 見た目 */
+    .card {
+      background-color: rgb(187, 250, 142);
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+
+    /* タイトルとフッター */
+    h1 {
+      text-align: center;
+    }
+    p.intro {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>僕のホームページ</h1>
+  <p class="intro">CSS Gridを使ったシンプルなページです。</p>
+
+  <!-- CSS Gridを適用する枠組み -->
+  <div class="grid-container">
+    <div class="card">
+      <h2>自己紹介</h2>
+      <p>こんにちは！真大です！HTML・CSS勉強中です！</p>
+    </div>
+
+    <div class="card">
+      <h2>好きなこと</h2>
+      <p>絵を描くこと、レゴで作品作り。</p>
+    </div>
+
+    <div class="card">
+      <h2>学習中のこと</h2>
+      <p>HTML・CSS、経営学関連を勉強中です！</p>
+    </div>
+
+    <div class="card">
+      <h2>目標</h2>
+      <p>自分らしいウェブサイトを作れるようになりたいです！</p>
+    </div>
+  </div>
+
+    <nav>
+        <a href="kadai1-1.html">課題1のページ</a>
+    </nav>
+
+</body>
+</html>
